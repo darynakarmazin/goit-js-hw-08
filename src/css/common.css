@@ -1,3 +1,5 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
 * {
   box-sizing: border-box;
 }
@@ -15,4 +17,8 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
 }
