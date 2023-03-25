@@ -6,15 +6,13 @@ const player = new Player(iframe);
 
 console.log(player);
 
-
 const onPlay = function (time) {
-    console.log(time.seconds);
-    localStorage.setItem('videoplayer-current-time', time.seconds);
-    
+  console.log(time.seconds);
+  localStorage.setItem('videoplayer-current-time', time.seconds);
 };
 player.on('timeupdate', throttle(onPlay, 1000));
 
-currentTime = localStorage.getItem('videoplayer-current-time');
+const currentTime = localStorage.getItem('videoplayer-current-time');
 
 player
   .setCurrentTime(currentTime)
