@@ -17,7 +17,7 @@ function saveMessage(evt) {
 
 function onFormSubmit(evt) {
   evt.preventDefault();
-  //   console.log('go!');
+  console.log(feedbackForm);
   evt.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
 }
